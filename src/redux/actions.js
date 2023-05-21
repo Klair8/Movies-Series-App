@@ -8,7 +8,7 @@ export const getFilm = (movie_Obj) =>{
 
 export const fetchFilms =(text,id, plot, yearofr) => (dispatch, getState) =>{
     dispatch( { type: "LOADING" } )
-  fetch(`http://www.omdbapi.com/?s=${text}&type=movie&apikey=fbe2eea3&i=${id}&plot=${plot}&y=${yearofr}`)
+  fetch(`https://www.omdbapi.com/?s=${text}&type=movie&apikey=fbe2eea3&i=${id}&plot=${plot}&y=${yearofr}`)
       .then(res=>res.json())
       .then(data=>{
         dispatch({
@@ -19,7 +19,7 @@ export const fetchFilms =(text,id, plot, yearofr) => (dispatch, getState) =>{
 
 export const fetchMovie =(id) => (dispatch) =>{
     dispatch( { type: "LOADING" } )
-  fetch(`http://www.omdbapi.com/?apikey=fbe2eea3&i=${id}`)
+  fetch(`https://www.omdbapi.com/?apikey=fbe2eea3&i=${id}`)
       .then(res=>res.json())
       .then(data=>{
         dispatch({
