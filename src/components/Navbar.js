@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import imdbLogo from './imdb.png';
+import C from '../images/C.png';
 
 
 function Bar() {
@@ -11,12 +11,14 @@ function Bar() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand >
+          <a href="https://clairesacuto-portfolio.vercel.app/">
             <img
               alt=""
-              src={imdbLogo} 
+              src={C} 
               width="70"
               height="70"
-            /> {' '}
+            /> </a>
+            
               </Navbar.Brand>
               <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
